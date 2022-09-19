@@ -53,7 +53,7 @@ const Home: NextPage = () => {
           {
             // If the listings are loading, show a loading message
             loadingListings ? (
-              <div>Loading listings...</div>
+              <div>作品を表示中です...お待ちください</div>
             ) : (
               // Otherwise, show the listings
               <div className={styles.listingGrid}>
