@@ -246,3 +246,4 @@ We attach these functions to the `onClick` handlers of our `Buy` and `Make Offer
 
 For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
 # blossom2
+# blossom3
