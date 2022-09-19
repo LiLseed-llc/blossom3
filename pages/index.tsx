@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
   // Connect your marketplace smart contract here (replace this address)
   const marketplace = useMarketplace(
-    "0x277C0FB19FeD09c785448B8d3a80a78e7A9B8952" // Your marketplace contract address here
+    "0x6A54285e1daBDbc45270226674c467e7BeCBb872" // Your marketplace contract address here
   );
 
   const { data: listings, isLoading: loadingListings } =
@@ -24,32 +24,30 @@ const Home: NextPage = () => {
       {/* Content */}
       <div className={styles.container}>
         {/* Top Section */}
-        <h1 className={styles.h1}>NFT Marketplace w/ thirdweb + Next.JS</h1>
+        <h1 className={styles.h1}>Blossom＊</h1>
+
+        <hr className={styles.divider} />
+
         <p className={styles.explain}>
-          Build an NFT marketplace using{" "}
-          <b>
-            {" "}
-            <a
-              href="https://thirdweb.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.purple}
-            >
-              thirdweb
-            </a>
-          </b>{" "}
-          to list your ERC721 and ERC1155 tokens for auction or for direct sale.
-        </p>
+          歌いたい！歌って欲しい！を実現するNFTプロジェクト</p>
+        <p className={styles.explain}>
+          〝 Blossom＊ -ブロッサムアスタリスク- 〟</p>
+        <p className={styles.explain}>
+          多くの作品から新しいものを作り上げる体験をしよう！</p>
 
         <hr className={styles.divider} />
 
         <div style={{ marginTop: 32, marginBottom: 32 }}>
           <Link href="/create">
             <a className={styles.mainButton} style={{ textDecoration: "none" }}>
-              Create A Listing
+              出品はこちら
             </a>
           </Link>
         </div>
+
+        <hr className={styles.divider} />
+
+        <p></p>
 
         <div className="main">
           {
