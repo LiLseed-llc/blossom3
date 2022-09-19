@@ -117,7 +117,7 @@ const Create: NextPage = () => {
         {/* Form Section */}
         <div className={styles.collectionContainer}>
           <h1 className={styles.ourCollection}>
-            Upload your NFT to the marketplace:
+            作品のアップロード
           </h1>
 
           {/* Toggle between direct listing and auction listing */}
@@ -131,7 +131,7 @@ const Create: NextPage = () => {
               className={styles.listingType}
             />
             <label htmlFor="directListing" className={styles.listingTypeLabel}>
-              Direct Listing
+              ダイレクト出品
             </label>
             <input
               type="radio"
@@ -141,7 +141,7 @@ const Create: NextPage = () => {
               className={styles.listingType}
             />
             <label htmlFor="auctionListing" className={styles.listingTypeLabel}>
-              Auction Listing
+              オークション
             </label>
           </div>
 
@@ -150,7 +150,7 @@ const Create: NextPage = () => {
             type="text"
             name="contractAddress"
             className={styles.textInput}
-            placeholder="NFT Contract Address"
+            placeholder="「NFT Contract Address」入力"
           />
 
           {/* NFT Token ID Field */}
@@ -158,7 +158,7 @@ const Create: NextPage = () => {
             type="text"
             name="tokenId"
             className={styles.textInput}
-            placeholder="NFT Token ID"
+            placeholder="「NFT Token ID」入力"
           />
 
           {/* Sale Price For Listing Field */}
@@ -166,7 +166,7 @@ const Create: NextPage = () => {
             type="text"
             name="price"
             className={styles.textInput}
-            placeholder="Sale Price"
+            placeholder="売値（Polygon「MATIC」単位）例、0.01"
           />
 
           <button
@@ -174,7 +174,7 @@ const Create: NextPage = () => {
             className={styles.mainButton}
             style={{ marginTop: 32, borderStyle: "none" }}
           >
-            List NFT
+            NFTを出品する
           </button>
         </div>
       </div>
