@@ -24,16 +24,14 @@ const Home: NextPage = () => {
       {/* Content */}
       <div className={styles.container}>
         {/* Top Section */}
-        <h1 className={styles.h1}>Blossom＊</h1>
+        <h1 className={styles.h1}>Blossom＊ MarketPlace</h1>
 
         <hr className={styles.divider} />
 
         <p className={styles.explain}>
-          歌いたい！歌って欲しい！を実現するNFTプロジェクト</p>
+          Blossom＊のMarketPlaceへようこそ</p>
         <p className={styles.explain}>
-          〝 Blossom＊ -ブロッサムアスタリスク- 〟</p>
-        <p className={styles.explain}>
-          多くの作品から新しいものを作り上げる体験をしよう！</p>
+          ー新しいものを作り上げる体験をしようー</p>
 
         <hr className={styles.divider} />
 
