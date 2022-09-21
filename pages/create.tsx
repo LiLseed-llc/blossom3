@@ -150,7 +150,7 @@ const Create: NextPage = () => {
             type="text"
             name="contractAddress"
             className={styles.textInput}
-            placeholder="「NFT Contract Address」入力"
+            placeholder="[NFT Contract Address]入力"
           />
 
           {/* NFT Token ID Field */}
@@ -158,7 +158,7 @@ const Create: NextPage = () => {
             type="text"
             name="tokenId"
             className={styles.textInput}
-            placeholder="「NFT Token ID」入力"
+            placeholder="[NFT Token ID]入力"
           />
 
           {/* Sale Price For Listing Field */}
@@ -166,7 +166,7 @@ const Create: NextPage = () => {
             type="text"
             name="price"
             className={styles.textInput}
-            placeholder="売値（Polygon「MATIC」単位）例、0.01"
+            placeholder="売値（MATIC単位）例、0.01"
           />
 
           <button
