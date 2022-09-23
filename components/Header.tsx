@@ -13,7 +13,7 @@ export default function Header() {
     <div className={styles.header}>
       <div className={styles.left}>
         <div>
-          <Link href="/" passHref role="button">
+          <Link href="https://www.blossom-a.net" passHref role="button">
             <img
               src={`/logo2.png`}
               alt="Blossom Logo"
