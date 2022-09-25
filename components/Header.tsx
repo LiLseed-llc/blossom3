@@ -23,6 +23,14 @@ export default function Header() {
           </Link>
         </div>
       </div>
+      <div className={styles.left}>
+          <a
+            className={styles.mainButton}
+            href="https://blossom-a-lilseed-llc.vercel.app/"
+          >
+            MarketPlace TOP
+          </a>
+      </div>
       <div className={styles.right}>
         {address ? (
           <>

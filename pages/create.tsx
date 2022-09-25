@@ -48,15 +48,6 @@ const Create: NextPage = () => {
         );
       }
 
-      // For Auction Listings:
-      if (listingType.value === "auctionListing") {
-        transactionResult = await createAuctionListing(
-          contractAddress.value,
-          tokenId.value,
-          price.value
-        );
-      }
-
       // If the transaction succeeds, take the user back to the homepage to view their listing!
       if (transactionResult) {
         router.push(`/`);
@@ -130,19 +121,6 @@ const Create: NextPage = () => {
               defaultChecked
               className={styles.listingType}
             />
-            <label htmlFor="directListing" className={styles.listingTypeLabel}>
-              ダイレクト出品
-            </label>
-            <input
-              type="radio"
-              name="listingType"
-              id="auctionListing"
-              value="auctionListing"
-              className={styles.listingType}
-            />
-            <label htmlFor="auctionListing" className={styles.listingTypeLabel}>
-              オークション
-            </label>
           </div>
 
           {/* NFT Contract Address Field */}
