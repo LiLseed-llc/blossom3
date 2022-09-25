@@ -22,6 +22,14 @@ const Home: NextPage = () => {
   return (
     <>
       {/* Content */}
+      <div style={{ marginTop: 32, marginBottom: 32 }}>
+        <Link href="https://blossom-a-lilseed-llc.vercel.app/">
+          <a
+            className={styles.mainButton} style={{ textDecoration: "none" }}>
+            MarketPlace TOP
+          </a>
+        </Link>
+      </div>
       <div className={styles.container}>
         {/* Top Section */}
         <h1 className={styles.h1}>Blossom＊ MarketPlace</h1>
@@ -51,7 +59,7 @@ const Home: NextPage = () => {
           {
             // If the listings are loading, show a loading message
             loadingListings ? (
-              <div>作品を表示中です...お待ちください</div>
+              <div>作品を表示中です...少々お待ちください</div>
             ) : (
               // Otherwise, show the listings
               <div className={styles.listingGrid}>

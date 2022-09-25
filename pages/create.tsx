@@ -107,6 +107,7 @@ const Create: NextPage = () => {
       <div className={styles.container}>
         {/* Form Section */}
         <div className={styles.collectionContainer}>
+
           <h1 className={styles.ourCollection}>
             作品のアップロード
           </h1>
@@ -155,6 +156,15 @@ const Create: NextPage = () => {
             NFTを出品する
           </button>
         </div>
+        
+        <div style={{ marginTop: 32, marginBottom: 32 }}>
+          <a
+            className={styles.mainButton}
+            href="https://blossom-a-lilseed-llc.vercel.app/">
+            MarketPlace TOP
+          </a>
+        </div>
+
       </div>
     </form>
   );
