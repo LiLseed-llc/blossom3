@@ -44,7 +44,23 @@ const Home: NextPage = () => {
         <hr className={styles.divider} />
 
         <div style={{ marginTop: 32, marginBottom: 32 }}>
+
+        <p className={styles.explain}>
+          ＜コントラクトをお持ちの方＞</p>
+
           <Link href="/create">
+            <a className={styles.mainButton} style={{ textDecoration: "none" }}>
+              出品はこちら
+            </a>
+          </Link>
+        </div>
+
+        <div style={{ marginTop: 32, marginBottom: 32 }}>
+
+        <p className={styles.explain}>
+          ＜直接アップロードしたい方＞</p>
+
+          <Link href="https://blossom1.vercel.app/">
             <a className={styles.mainButton} style={{ textDecoration: "none" }}>
               出品はこちら
             </a>
