@@ -145,7 +145,7 @@ const Create: NextPage = () => {
             type="text"
             name="price"
             className={styles.textInput}
-            placeholder="売値（MATIC単位）例、0.01"
+            placeholder="売値（MATIC単位）"
           />
 
           <button
