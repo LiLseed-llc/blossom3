@@ -7,9 +7,13 @@ import {
   useMarketplace,
 } from "@thirdweb-dev/react";
 import { useRouter } from "next/router";
+import { useEffect, useState } from 'react';
+import { AuctionListing, DirectListing } from "@thirdweb-dev/sdk";
 
 const Home: NextPage = () => {
   const router = useRouter();
+
+  const [nftList, setNftList] = useState<any[]>([]);
 
   // Connect your marketplace smart contract here (replace this address)
   const marketplace = useMarketplace(
@@ -18,6 +22,25 @@ const Home: NextPage = () => {
 
   const { data: listings, isLoading: loadingListings } =
     useActiveListings(marketplace);
+
+  useEffect(() => {
+    var tempList: any[] = [];
+    listings?.map((listing) => {
+      tempList.push(listing);
+    })
+    let tempNftList: any[] = [];
+    var nftCount:number = tempList.length;
+    for(let i = 0; i < nftCount; i ++) {
+      const randomIndex = getRandomInt(tempList.length);
+      tempNftList.push(tempList[randomIndex]);
+      tempList = tempList.splice(randomIndex, 1);
+    }
+    setNftList(tempNftList);
+  },[listings])
+
+  function getRandomInt(max: number) {
+    return Math.floor(Math.random() * max);
+  }
 
   return (
     <>
@@ -64,7 +87,7 @@ const Home: NextPage = () => {
             ) : (
               // Otherwise, show the listings
               <div className={styles.listingGrid}>
-                {listings?.map((listing) => (
+                {nftList?.map((listing:(AuctionListing | DirectListing)) => (
                   <div
                     key={listing.id}
                     className={styles.listingShortView}
