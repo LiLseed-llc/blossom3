@@ -20,8 +20,7 @@ const Home: NextPage = () => {
     "0x9c8c54B0D33aF31E820673A190C0FB0C69baF1db" // Your marketplace contract address here
   );
 
-  const { data: listings, isLoading: loadingListings } =
-    useActiveListings(marketplace);
+  const { data: listings, isLoading: loadingListings } = useActiveListings(marketplace);
 
   useEffect(() => {
     var tempList: any[] = [];
